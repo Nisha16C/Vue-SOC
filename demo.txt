@@ -1,0 +1,63 @@
+<section class="shadow-inner" id="LI">
+            <h1 class="">Log Ingestion</h1>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+              <div class="border-2 border-gray-200 border-solid rounded-lg">
+                <div class="tool rounded-lg" :style="{'background-color': selectedTools.includes('fluentd') ? '#BEBDB8' : 'initial'}">
+                  <label for="Fluentd">
+                    <input @change="changeColor" v-model="selectedTools" class="hidden" type="checkbox" name="Fluentd" id="Fluentd" value="fluentd"> 
+                    <span style="font-weight: bold;">Fluentd</span>
+                    <p class="tool-info">Fluentd simplifies data collection, enabling efficient log aggregation and flexible data routing. It plays a crucial role in log management, helping organizations centralize and analyze logs effectively.</p>
+                    <p><a style="color: blue;" href="https://docs.fluentd.org/">Read more</a></p>
+                    <img class="tool_img" src="static/fluentdd.png" alt="Fluentd Logo">
+                  </label>
+                </div>
+              </div>
+              <div class="border-2 border-gray-200 border-solid rounded-lg">
+                <div class="tool rounded-lg" :style="{'background-color': selectedTools.includes('filebeat') ? '#BEBDB8' : 'initial'}">
+                  <label for="Filebeat">
+                    <input @change="changeColor" v-model="selectedTools" class="hidden" type="checkbox" name="Filebeat" id="Filebeat" value="filebeat">
+                    <span style="font-weight: bold;">Filebeat</span>
+                    <p class="tool-info">A lightweight member of the Elastic Stack, Filebeat efficiently ships logs to Elasticsearch. It ensures real-time log analysis and monitoring, enhancing observability and operational insights.</p>
+                    <p><a style="color: blue;" href="https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-overview.html">Read more</a></p>
+                    <img class="tool_img" src="static/filebeat.png" alt="Filebeat Logo">
+                  </label>
+                </div>
+              </div>
+              <div class="border-2 border-gray-200 border-solid rounded-lg">
+                <div class="tool rounded-lg" :style="{'background-color': selectedTools.includes('rsyslog') ? '#BEBDB8' : 'initial'}">
+                  <label for="Rsyslog">
+                    <input @change="changeColor" v-model="selectedTools" class="hidden" type="checkbox" name="Rsyslog" id="Rsyslog" value="rsyslog"> 
+                    <span style="font-weight: bold;">Rsyslog</span>
+                    <p class="tool-info">Rsyslog is a reliable open-source logging system. It centralizes log management, simplifying monitoring and troubleshooting of system and application events for organizations.</p>
+                    <p><a style="color: blue;" href="https://www.rsyslog.com/doc/master/index.html">Read more</a></p>
+                    <img class="tool_img" src="static/rsyslog.png" alt="Rsyslog Logo">
+                  </label>
+                </div>
+              </div>
+            </div>
+          </section>
+
+upr wale code jaise same  changes niche wale code m kr ke do  
+
+<section class="shadow-inner" id="TDP">
+            <h1  class="">Thread Detection And Prevention</h1>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+              <div class="tool"><label for="Wazuh"> 
+                  <input v-model="selectedTools" type="checkbox" name="Wazuh" id="Wazuh" value="efk"> Wazuh 
+                  <p class="tool-info">Wazuh helps monitoring cloud infrastructure at an API level, using integration modules that are able to pull security data from well known cloud providers, such as Amazon AWS, Azure or Google Cloud. In addition, Wazuh provides rules to assess the configuration of your cloud environment, easily spotting weaknesses. <a href="https://documentation.wazuh.com/current/index.html">Read more</a></p> 
+                  <img src=" ../../public/static/WAZUH.png" alt="Wazuh Logo"> 
+                  </label></div></div> 
+                  
+                  <div class="tool"><label for="OSSEC"> 
+                  <input v-model="selectedTools" type="checkbox" name="OSSEC" id="OSSEC" value="OSSEC"> OSSEC 
+                  <p class="tool-info">OSSEC (Open Source HIDS SECurity) is a free, open-source host-based intrusion detection system (HIDS). It performs log analysis, integrity checking, Windows registry monitoring, rootkit detection, time-based alerting, and active response. <a href="https://documentation.wazuh.com/current/index.html">Read more</a></p> 
+                  <img src=" ../../public/static/ossec.png" alt="Wazuh Logo"> 
+                  </label></div>
+                 
+                  <div class="tool"><label for="MISP"> 
+                  <input v-model="selectedTools" type="checkbox" name="MISP" id="MISP" value="MISP"> MISP (Malware Information Sharing Platform) 
+                  <p class="tool-info">MISP is an open source software and it is also a large community of MISP users creating, maintaining and operating communities of users or organizations sharing information about threats or cyber security indicators worldwide. <a href="https://documentation.wazuh.com/current/index.html">Read more</a></p> 
+                  <img src=" ../../public/static/misp.png" alt="Wazuh Logo"> 
+                  </label>
+            </div> 
+          </section>
