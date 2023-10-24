@@ -1,27 +1,46 @@
-<section class="shadow-inner" id="IE">
-    <h1 class="">Intelligent Enrichment</h1>
-    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-        <div class="border-2 border-gray-200 border-solid rounded-lg">
-            <div class="tool rounded-lg" :style="{'background-color': selectedTools.includes('OpenCTI') ? '#BEBDB8' : 'initial'}">
-                <label for="OpenCTI">
-                    <input @change="changeColor" v-model="selectedTools" class="hidden" type="checkbox" name="OpenCTI" id="OpenCTI" value="OpenCTI">
-                    <span style="font-weight: bold;">OpenCTI</span>
-                    <p class="tool-info">OpenCTI facilitates the collection, analysis, and sharing of cyber threat intelligence. It fosters collaboration among security professionals and organizations, enhancing threat awareness and preparedness.</p>
-                    <p><a style="color: blue;" href="https://docs.opencti.io/latest/">Read more</a></p>
-                    <img class="tool_img" src="../../public/static/opencti.png" alt="OpenCTI Logo">
+<section class="shadow-inner" id="CM">
+            <h1 class="">Case Management</h1>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+              <div class="tool" :style="{'background-color': selectedTools.includes('TheHIVE') ? '#BEBDB8' : 'initial'}">
+                <label for="TheHIVE">
+                  <input v-model="selectedTools" type="checkbox" name="TheHIVE" id="TheHIVE" value="TheHIVE"> 
+                  <span style="font-weight: bold;">TheHIVE</span>
+                  <p class="tool-info">TheHIVE streamlines incident response and case management with its open-source platform. It facilitates efficient handling of security incidents and promotes collaboration among analysts. <a href="https://docs.thehive-project.org/">Read more</a></p>
+                  <p><a style="color: blue;" href="https://loganalyzer.adiscon.com/doc/">Read more</a></p>
+                  <img src="../../public/static/thehive.png" alt="TheHIVE Logo">
                 </label>
-            </div>
-        </div>
-        <div class="border-2 border-gray-200 border-solid rounded-lg">
-            <div class="tool rounded-lg" :style="{'background-color': selectedTools.includes('MISP') ? '#BEBDB8' : 'initial'}">
-                <label for="MISP">
-                    <input @change="changeColor" v-model="selectedTools" class="hidden" type="checkbox" name="MISP" id="MISP" value="MISP">
-                    <span style="font-weight: bold;">MISP (Malware Information Sharing Platform)</span>
-                    <p class="tool-info">MISP, an open-source threat intelligence platform, enhances structured threat information sharing among security professionals, aiding in threat detection and mitigation.</p>
-                    <p><a style="color: blue;" href="https://www.misp-project.org/documentation/">Read more</a></p>
-                    <img class="tool_img" src="../../public/static/misp.png" alt="MISP Logo">
+              </div>
+              <div class="tool" :style="{'background-color': selectedTools.includes('RTIR') ? '#BEBDB8' : 'initial'}">
+                <label for="RTIR">
+                  <input v-model="selectedTools" type="checkbox" name="RTIR" id="RTIR" value="RTIR"> 
+                  <span style="font-weight: bold;">RTIR (Request Tracker for Incident Response)</span>
+                  <p class="tool-info">RTIR extends Request Tracker for incident response teams. It provides comprehensive tools for managing and tracking security incidents and investigations effectively. <a href="https://docs.bestpractical.com/rtir/4.0.3/index.html">Read more</a></p>
+                  <p><a style="color: rgb(138, 138, 153);" href="https://loganalyzer.adiscon.com/doc/">Read more</a></p>
+                  <img src="../../public/static/rtir.png" alt="RTIR Logo">
                 </label>
+              </div>
             </div>
-        </div>
-    </div>
-</section>
+          </section><hr>
+          <section class="shadow-inner" id="ATO">
+            <h1 class="">Log Automate</h1>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+              <div class="tool" :style="{'background-color': selectedTools.includes('Shuffle') ? '#BEBDB8' : 'initial'}">
+                <label for="Shuffle">
+                  <input v-model="selectedTools" type="checkbox" name="Shuffle" id="Shuffle" value="Shuffle"> 
+                  <span style="font-weight: bold;">Shuffle</span>
+                  <p class="tool-info">Shuffle is an open-source framework tailored for managing and automating security playbooks. It equips organizations with the means to respond promptly and effectively to security incidents. <a href="https://shuffler.io/docs/about">Read more</a></p>
+                  <p><a style="color: blue;" href="https://loganalyzer.adiscon.com/doc/">Read more</a></p>
+                  <img src="../../public/static/shuffle.png" alt="Shuffle Logo">
+                </label>
+              </div>
+              <div class="tool" :style="{'background-color': selectedTools.includes('Cortex') ? '#BEBDB8' : 'initial'}">
+                <label for="Cortex">
+                  <input v-model="selectedTools" type="checkbox" name="Cortex" id="Cortex" value="Cortex"> 
+                  <span style="font-weight: bold;">Cortex</span>
+                  <p class="tool-info">Cortex is an open-source observability and security automation platform. It integrates seamlessly with various security tools, automating responses to threats and enhancing security operations. <a href="https://docs.cortex.io/">Read more</a></p>
+                  <p><a style="color: blue;" href="https://loganalyzer.adiscon.com/doc/">Read more</a></p>
+                  <img src="../../public/static/cortex.png" alt="Cortex Logo">
+                </label>
+              </div>
+            </div>
+          </section>
