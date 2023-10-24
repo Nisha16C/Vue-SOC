@@ -1,38 +1,38 @@
 <section class="shadow-inner" id="LI">
-            <h1 class="">Log Ingestion</h1>
-            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-              <div class="border-2 border-gray-200 border-solid rounded-lg">
-                <div class="tool rounded-lg" :style="{'background-color': selectedTools.includes('fluentd') ? '#BEBDB8' : 'initial'}">
-                  <label for="Fluentd">
+    <h1 class="">Log Ingestion</h1>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <div class="border-2 border-gray-200 border-solid rounded-lg">
+            <div class="tool rounded-lg" :style="{'background-color': selectedTools.includes('fluentd') ? '#BEBDB8' : 'initial'}" @click="toggleTool('fluentd')">
+                <label for="Fluentd">
                     <input @change="changeColor" v-model="selectedTools" class="hidden" type="checkbox" name="Fluentd" id="Fluentd" value="fluentd"> 
                     <span style="font-weight: bold;">Fluentd</span>
                     <p class="tool-info">Fluentd simplifies data collection, enabling efficient log aggregation and flexible data routing. It plays a crucial role in log management, helping organizations centralize and analyze logs effectively.</p>
                     <p><a style="color: blue;" href="https://docs.fluentd.org/">Read more</a></p>
                     <img class="tool_img" src="static/fluentdd.png" alt="Fluentd Logo">
-                  </label>
-                </div>
-              </div>
-              <div class="border-2 border-gray-200 border-solid rounded-lg">
-                <div class="tool rounded-lg" :style="{'background-color': selectedTools.includes('filebeat') ? '#BEBDB8' : 'initial'}">
-                  <label for="Filebeat">
+                </label>
+            </div>
+        </div>
+        <div class="border-2 border-gray-200 border-solid rounded-lg">
+            <div class="tool rounded-lg" :style="{'background-color': selectedTools.includes('filebeat') ? '#BEBDB8' : 'initial'}" @click="toggleTool('filebeat')">
+                <label for="Filebeat">
                     <input @change="changeColor" v-model="selectedTools" class="hidden" type="checkbox" name="Filebeat" id="Filebeat" value="filebeat">
                     <span style="font-weight: bold;">Filebeat</span>
                     <p class="tool-info">A lightweight member of the Elastic Stack, Filebeat efficiently ships logs to Elasticsearch. It ensures real-time log analysis and monitoring, enhancing observability and operational insights.</p>
                     <p><a style="color: blue;" href="https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-overview.html">Read more</a></p>
                     <img class="tool_img" src="static/filebeat.png" alt="Filebeat Logo">
-                  </label>
-                </div>
-              </div>
-              <div class="border-2 border-gray-200 border-solid rounded-lg">
-                <div class="tool rounded-lg" :style="{'background-color': selectedTools.includes('rsyslog') ? '#BEBDB8' : 'initial'}">
-                  <label for="Rsyslog">
+                </label>
+            </div>
+        </div>
+        <div class="border-2 border-gray-200 border-solid rounded-lg">
+            <div class="tool rounded-lg" :style="{'background-color': selectedTools.includes('rsyslog') ? '#BEBDB8' : 'initial'}" @click="toggleTool('rsyslog')">
+                <label for="Rsyslog">
                     <input @change="changeColor" v-model="selectedTools" class="hidden" type="checkbox" name="Rsyslog" id="Rsyslog" value="rsyslog"> 
                     <span style="font-weight: bold;">Rsyslog</span>
                     <p class="tool-info">Rsyslog is a reliable open-source logging system. It centralizes log management, simplifying monitoring and troubleshooting of system and application events for organizations.</p>
                     <p><a style="color: blue;" href="https://www.rsyslog.com/doc/master/index.html">Read more</a></p>
                     <img class="tool_img" src="static/rsyslog.png" alt="Rsyslog Logo">
-                  </label>
-                </div>
-              </div>
+                </label>
             </div>
-          </section>
+        </div>
+    </div>
+</section>
