@@ -1,46 +1,56 @@
 <section class="shadow-inner" id="CM">
-            <h1 class="">Case Management</h1>
-            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-              <div class="tool" :style="{'background-color': selectedTools.includes('TheHIVE') ? '#BEBDB8' : 'initial'}">
+    <h1 class="">Case Management</h1>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <div class="border-2 border-gray-200 border-solid rounded-lg">
+            <div class="tool rounded-lg" :style="{'background-color': selectedTools.includes('TheHIVE') ? '#BEBDB8' : 'initial'}">
                 <label for="TheHIVE">
-                  <input v-model="selectedTools" type="checkbox" name="TheHIVE" id="TheHIVE" value="TheHIVE"> 
-                  <span style="font-weight: bold;">TheHIVE</span>
-                  <p class="tool-info">TheHIVE streamlines incident response and case management with its open-source platform. It facilitates efficient handling of security incidents and promotes collaboration among analysts. <a href="https://docs.thehive-project.org/">Read more</a></p>
-                  <p><a style="color: blue;" href="https://loganalyzer.adiscon.com/doc/">Read more</a></p>
-                  <img src="../../public/static/thehive.png" alt="TheHIVE Logo">
+                    <input @change="changeColor" v-model="selectedTools" class="hidden" type="checkbox" name="TheHIVE" id="TheHIVE" value="TheHIVE">
+                    <span style="font-weight: bold;">TheHIVE</span>
+                    <p class="tool-info">TheHIVE streamlines incident response and case management with its open-source platform. It facilitates efficient handling of security incidents and promotes collaboration among analysts.</p>
+                    <p><a style="color: blue;" href="https://docs.thehive-project.org/">Read more</a></p>
+                    <img class="tool_img" src="../../public/static/thehive.png" alt="TheHIVE Logo">
                 </label>
-              </div>
-              <div class="tool" :style="{'background-color': selectedTools.includes('RTIR') ? '#BEBDB8' : 'initial'}">
+            </div>
+        </div>
+        <div class="border-2 border-gray-200 border-solid rounded-lg">
+            <div class="tool rounded-lg" :style="{'background-color': selectedTools.includes('RTIR') ? '#BEBDB8' : 'initial'}">
                 <label for="RTIR">
-                  <input v-model="selectedTools" type="checkbox" name="RTIR" id="RTIR" value="RTIR"> 
-                  <span style="font-weight: bold;">RTIR (Request Tracker for Incident Response)</span>
-                  <p class="tool-info">RTIR extends Request Tracker for incident response teams. It provides comprehensive tools for managing and tracking security incidents and investigations effectively. <a href="https://docs.bestpractical.com/rtir/4.0.3/index.html">Read more</a></p>
-                  <p><a style="color: rgb(138, 138, 153);" href="https://loganalyzer.adiscon.com/doc/">Read more</a></p>
-                  <img src="../../public/static/rtir.png" alt="RTIR Logo">
+                    <input @change="changeColor" v-model="selectedTools" class="hidden" type="checkbox" name="RTIR" id="RTIR" value="RTIR">
+                    <span style="font-weight: bold;">RTIR (Request Tracker for Incident Response)</span>
+                    <p class="tool-info">RTIR extends Request Tracker for incident response teams. It provides comprehensive tools for managing and tracking security incidents and investigations effectively.</p>
+                    <p><a style="color: blue;" href="https://docs.bestpractical.com/rtir/4.0.3/index.html">Read more</a></p>
+                    <img class="tool_img" src="../../public/static/rtir.png" alt="RTIR Logo">
                 </label>
-              </div>
             </div>
-          </section><hr>
-          <section class="shadow-inner" id="ATO">
-            <h1 class="">Log Automate</h1>
-            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-              <div class="tool" :style="{'background-color': selectedTools.includes('Shuffle') ? '#BEBDB8' : 'initial'}">
+        </div>
+    </div>
+</section>
+<hr>
+
+<section class="shadow-inner" id="ATO">
+    <h1 class="">Log Automate</h1>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <div class="border-2 border-gray-200 border-solid rounded-lg">
+            <div class="tool rounded-lg" :style="{'background-color': selectedTools.includes('Shuffle') ? '#BEBDB8' : 'initial'}">
                 <label for="Shuffle">
-                  <input v-model="selectedTools" type="checkbox" name="Shuffle" id="Shuffle" value="Shuffle"> 
-                  <span style="font-weight: bold;">Shuffle</span>
-                  <p class="tool-info">Shuffle is an open-source framework tailored for managing and automating security playbooks. It equips organizations with the means to respond promptly and effectively to security incidents. <a href="https://shuffler.io/docs/about">Read more</a></p>
-                  <p><a style="color: blue;" href="https://loganalyzer.adiscon.com/doc/">Read more</a></p>
-                  <img src="../../public/static/shuffle.png" alt="Shuffle Logo">
+                    <input @change="changeColor" v-model="selectedTools" class="hidden" type="checkbox" name="Shuffle" id="Shuffle" value="Shuffle">
+                    <span style="font-weight: bold;">Shuffle</span>
+                    <p class="tool-info">Shuffle is an open-source framework tailored for managing and automating security playbooks. It equips organizations with the means to respond promptly and effectively to security incidents.</p>
+                    <p><a style="color: blue;" href="https://shuffler.io/docs/about">Read more</a></p>
+                    <img class="tool_img" src="../../public/static/shuffle.png" alt="Shuffle Logo">
                 </label>
-              </div>
-              <div class="tool" :style="{'background-color': selectedTools.includes('Cortex') ? '#BEBDB8' : 'initial'}">
-                <label for="Cortex">
-                  <input v-model="selectedTools" type="checkbox" name="Cortex" id="Cortex" value="Cortex"> 
-                  <span style="font-weight: bold;">Cortex</span>
-                  <p class="tool-info">Cortex is an open-source observability and security automation platform. It integrates seamlessly with various security tools, automating responses to threats and enhancing security operations. <a href="https://docs.cortex.io/">Read more</a></p>
-                  <p><a style="color: blue;" href="https://loganalyzer.adiscon.com/doc/">Read more</a></p>
-                  <img src="../../public/static/cortex.png" alt="Cortex Logo">
-                </label>
-              </div>
             </div>
-          </section>
+        </div>
+        <div class="border-2 border-gray-200 border-solid rounded-lg">
+            <div class="tool rounded-lg" :style="{'background-color': selectedTools.includes('Cortex') ? '#BEBDB8' : 'initial'}">
+                <label for="Cortex">
+                    <input @change="changeColor" v-model="selectedTools" class="hidden" type="checkbox" name="Cortex" id="Cortex" value="Cortex">
+                    <span style="font-weight: bold;">Cortex</span>
+                    <p class="tool-info">Cortex is an open-source observability and security automation platform. It integrates seamlessly with various security tools, automating responses to threats and enhancing security operations.</p>
+                    <p><a style="color: blue;" href="https://docs.cortex.io/">Read more</a></p>
+                    <img class="tool_img" src="../../public/static/cortex.png" alt="Cortex Logo">
+                </label>
+            </div>
+        </div>
+    </div>
+</section>
