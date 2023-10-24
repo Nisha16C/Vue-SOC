@@ -1,67 +1,38 @@
-<section class="shadow-inner" id="INV">
-    <h1 class="">Investigation</h1>
-    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-        <div class="border-2 border-gray-200 border-solid rounded-lg">
-            <div class="tool rounded-lg" :style="{'background-color': selectedTools.includes('Velociraptor') ? '#BEBDB8' : 'initial'}">
-                <label for="Velociraptor">
-                    <input @change="changeColor" v-model="selectedTools" class="hidden" type="checkbox" name="Velociraptor" id="Velociraptor" value="Velociraptor">
-                    <span style="font-weight: bold;">Velociraptor</span>
-                    <p class="tool-info">Velociraptor is an open-source endpoint visibility and digital forensics tool. It empowers security professionals to collect and analyze endpoint data, aiding in threat detection and rapid response.</p>
-                    <p><a style="color: blue;" href="https://docs.velociraptor.app/docs/">Read more</a></p>
-                    <img src="../../public/static/velociraptor.png" alt="Velociraptor Logo">
-                </label>
+<section class="shadow-inner" id="LI">
+            <h1 class="">Log Ingestion</h1>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+              <div class="border-2 border-gray-200 border-solid rounded-lg">
+                <div class="tool rounded-lg" :style="{'background-color': selectedTools.includes('fluentd') ? '#BEBDB8' : 'initial'}">
+                  <label for="Fluentd">
+                    <input @change="changeColor" v-model="selectedTools" class="hidden" type="checkbox" name="Fluentd" id="Fluentd" value="fluentd"> 
+                    <span style="font-weight: bold;">Fluentd</span>
+                    <p class="tool-info">Fluentd simplifies data collection, enabling efficient log aggregation and flexible data routing. It plays a crucial role in log management, helping organizations centralize and analyze logs effectively.</p>
+                    <p><a style="color: blue;" href="https://docs.fluentd.org/">Read more</a></p>
+                    <img class="tool_img" src="static/fluentdd.png" alt="Fluentd Logo">
+                  </label>
+                </div>
+              </div>
+              <div class="border-2 border-gray-200 border-solid rounded-lg">
+                <div class="tool rounded-lg" :style="{'background-color': selectedTools.includes('filebeat') ? '#BEBDB8' : 'initial'}">
+                  <label for="Filebeat">
+                    <input @change="changeColor" v-model="selectedTools" class="hidden" type="checkbox" name="Filebeat" id="Filebeat" value="filebeat">
+                    <span style="font-weight: bold;">Filebeat</span>
+                    <p class="tool-info">A lightweight member of the Elastic Stack, Filebeat efficiently ships logs to Elasticsearch. It ensures real-time log analysis and monitoring, enhancing observability and operational insights.</p>
+                    <p><a style="color: blue;" href="https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-overview.html">Read more</a></p>
+                    <img class="tool_img" src="static/filebeat.png" alt="Filebeat Logo">
+                  </label>
+                </div>
+              </div>
+              <div class="border-2 border-gray-200 border-solid rounded-lg">
+                <div class="tool rounded-lg" :style="{'background-color': selectedTools.includes('rsyslog') ? '#BEBDB8' : 'initial'}">
+                  <label for="Rsyslog">
+                    <input @change="changeColor" v-model="selectedTools" class="hidden" type="checkbox" name="Rsyslog" id="Rsyslog" value="rsyslog"> 
+                    <span style="font-weight: bold;">Rsyslog</span>
+                    <p class="tool-info">Rsyslog is a reliable open-source logging system. It centralizes log management, simplifying monitoring and troubleshooting of system and application events for organizations.</p>
+                    <p><a style="color: blue;" href="https://www.rsyslog.com/doc/master/index.html">Read more</a></p>
+                    <img class="tool_img" src="static/rsyslog.png" alt="Rsyslog Logo">
+                  </label>
+                </div>
+              </div>
             </div>
-        </div>
-        <div class="border-2 border-gray-200 border-solid rounded-lg">
-            <div class="tool rounded-lg" :style="{'background-color': selectedTools.includes('OSINT') ? '#BEBDB8' : 'initial'}">
-                <label for="OSINT">
-                    <input @change="changeColor" v-model="selectedTools" class="hidden" type="checkbox" name="OSINT" id="OSINT" value="OSINT">
-                    <span style="font-weight: bold;">OSINT Framework</span>
-                    <p class="tool-info">Open-source intelligence (OSINT) involves gathering and analyzing publicly available information from diverse sources to enhance security and investigative processes.</p>
-                    <p><a style="color: blue;" href="https://osintframework.com/">Read more</a></p>
-                    <img src="../../public/static/osint.png" alt="OSINT Framework Logo">
-                </label>
-            </div>
-        </div>
-        <div class="border-2 border-gray-200 border-solid rounded-lg">
-            <div class="tool rounded-lg" :style="{'background-color': selectedTools.includes('ElastAlert') ? '#BEBDB8' : 'initial'}">
-                <label for="ElastAlert">
-                    <input @change="changeColor" v-model="selectedTools" class="hidden" type="checkbox" name="ElastAlert" id="ElastAlert" value="ElastAlert">
-                    <span style="font-weight: bold;">ElastAlert</span>
-                    <p class="tool-info">ElastAlert, an open-source alerting framework for Elasticsearch, enables organizations to define custom alerting rules and actions based on data in Elasticsearch indices.</p>
-                    <p><a style="color: blue;" href="https://elastalert.readthedocs.io/en/latest/">Read more</a></p>
-                    <img src="../../public/static/elastalert.png" alt="ElastAlert Logo">
-                </label>
-            </div>
-        </div>
-    </div>
-</section>
-<hr>
-<section class="shadow-inner" id="HM">
-    <h1 class="">Health Monitoring</h1>
-    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-        <div class="border-2 border-gray-200 border-solid rounded-lg">
-            <div class="tool rounded-lg" :style="{'background-color': selectedTools.includes('InfluxDB') ? '#BEBDB8' : 'initial'}">
-                <label for="InfluxDB">
-                    <input @change="changeColor" v-model="selectedTools" class="hidden" type="checkbox" name="InfluxDB" id="InfluxDB" value="InfluxDB">
-                    <span style="font-weight: bold;">InfluxDB</span>
-                    <p class="tool-info">InfluxDB, an open-source time-series database, is optimized for efficient storage and querying of time-series data. It plays a pivotal role in monitoring and analytics applications.</p>
-                    <p><a style="color: blue;" href="https://docs.influxdata.com/">Read more</a></p>
-                    <img src="../../public/static/influxdb.png" alt="InfluxDB Logo">
-                </label>
-            </div>
-        </div>
-        <div class="border-2 border-gray-200 border-solid rounded-lg">
-            <div class="tool rounded-lg" :style="{'background-color': selectedTools.includes('Prometheus') ? '#BEBDB8' : 'initial'}">
-                <label for="Prometheus">
-                    <input @change="changeColor" v-model="selectedTools" class="hidden" type="checkbox" name="Prometheus" id="Prometheus" value="Prometheus">
-                    <span style="font-weight: bold;">Prometheus</span>
-                    <p class="tool-info">Prometheus is an open-source monitoring and alerting toolkit, designed to collect, process, and generate alerts based on metrics and predefined rules, aiding organizations in proactive system monitoring and issue detection.</p>
-                    <p><a style="color: blue;" href="https://prometheus.io/docs/prometheus/latest/getting_started/">Read more</a></p>
-                    <img src="../../public/static/prometheus.png" alt="Prometheus Logo">
-                </label>
-            </div>
-        </div>
-    </div>
-</section>
-<hr>
+          </section>
