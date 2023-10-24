@@ -1,40 +1,29 @@
-<section class="shadow-inner" id="TDP">
-    <h1 class="">Thread Detection and Prevention</h1>
-    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-        <div class="border-2 border-gray-200 border-solid rounded-lg">
-            <div class="tool rounded-lg" :style="{'background-color': selectedTools.includes('wazuh') ? '#BEBDB8' : 'initial'}">
-                <label for="Wazuh">
-                    <input @change="changeColor" v-model="selectedTools" class="hidden" type="checkbox" name="Wazuh" id="Wazuh" value="wazuh">
-                    <span style="font-weight: bold;">Wazuh</span>
-                    <p class="tool-info">Wazuh helps monitor cloud infrastructure at an API level, using integration modules that can pull security data from well-known cloud providers, such as Amazon AWS, Azure, or Google Cloud. In addition, Wazuh provides rules to assess the configuration of your cloud environment, easily spotting weaknesses.</p>
-                    <p><a style="color: blue;" href="https://documentation.wazuh.com/current/index.html">Read more</a></p>
-                    <img class="tool_img" src="../../public/static/WAZUH.png" alt="Wazuh Logo">
-                </label>
+ <section class="shadow-inner" id="LA">
+            <h1 class="">Log Analysis</h1>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+              <div class="border-2 border-gray-200 border-solid rounded-lg">
+                <div class="tool" :style="{'background-color': selectedTools.includes('graylog') ? '#BEBDB8' : 'initial'}" @click="toggleTool('graylog')">
+                  <span style="font-weight: bold;">Graylog</span>
+                  <p class="tool-info">Graylog, with its user-friendly interface, offers comprehensive log management and analysis. It optimizes log storage, search, and alerting, making it a valuable tool for both security and operations.</p>
+                  <p><a style="color: blue;" href="https://go2docs.graylog.org/5-1/home.htm">Read more</a></p>
+                  <img class="tool_img" src="static/graylog.png" alt="">
+                </div>
+              </div>
+              <div class="border-2 border-gray-200 border-solid rounded-lg">
+                <div class="tool" :style="{'background-color': selectedTools.includes('splunk') ? '#BEBDB8' : 'initial'}" @click="toggleTool('splunk')">
+                  <span style="font-weight: bold;">Splunk HEC</span>
+                  <p class="tool-info">Splunk HEC facilitates HTTP-based log and event data ingestion. It enhances real-time data analysis, offering critical insights for organizations using Splunk for log management and monitoring. </p>
+                  <p><a style="color: blue;" href="https://docs.splunk.com/Documentation/Splunk/9.1.1/Data/UsetheHTTPEventCollector">Read more</a></p>
+                  <img class="tool_img" src="static/splunk.png" alt="">
+                </div>
+              </div>
+              <div class="border-2 border-gray-200 border-solid rounded-lg">
+                <div class="tool" :style="{'background-color': selectedTools.includes('logAnalyzer') ? '#BEBDB8' : 'initial'}" @click="toggleTool('logAnalyzer')">
+                  <span style="font-weight: bold;">LogAnalyzer (formerly known as phpLogCon)</span>
+                  <p class="tool-info">LogAnalyzer is a web-based log management tool designed for effective log analysis. It simplifies system issue monitoring and troubleshooting, ensuring robust log management.</p>
+                  <p><a style="color: blue;" href="https://loganalyzer.adiscon.com/doc/">Read more</a></p>
+                  <img class="tool_img" src="static/loganalyzer.png" alt="">
+                </div>
+              </div>
             </div>
-        </div>
-
-        <div class="border-2 border-gray-200 border-solid rounded-lg">
-            <div class="tool rounded-lg" :style="{'background-color': selectedTools.includes('ossec') ? '#BEBDB8' : 'initial'}">
-                <label for="OSSEC">
-                    <input @change="changeColor" v-model="selectedTools" class="hidden" type="checkbox" name="OSSEC" id="OSSEC" value="ossec">
-                    <span style="font-weight: bold;">OSSEC</span>
-                    <p class="tool-info">OSSEC (Open Source HIDS SECurity) is a free, open-source host-based intrusion detection system (HIDS). It performs log analysis, integrity checking, Windows registry monitoring, rootkit detection, time-based alerting, and active response.</p>
-                    <p><a style="color: blue;" href="https://documentation.wazuh.com/current/index.html">Read more</a></p>
-                    <img class="tool_img" src="../../public/static/ossec.png" alt="OSSEC Logo">
-                </label>
-            </div>
-        </div>
-
-        <div class="border-2 border-gray-200 border-solid rounded-lg">
-            <div class="tool rounded-lg" :style="{'background-color': selectedTools.includes('misp') ? '#BEBDB8' : 'initial'}">
-                <label for="MISP">
-                    <input @change="changeColor" v-model="selectedTools" class="hidden" type="checkbox" name="MISP" id="MISP" value="misp">
-                    <span style="font-weight: bold;">MISP (Malware Information Sharing Platform)</span>
-                    <p class="tool-info">MISP is an open-source software and a large community of MISP users creating, maintaining, and operating communities of users or organizations sharing information about threats or cybersecurity indicators worldwide.</p>
-                    <p><a style="color: blue;" href="https://documentation.wazuh.com/current/index.html">Read more</a></p>
-                    <img class="tool_img" src="../../public/static/misp.png" alt="MISP Logo">
-                </label>
-            </div>
-        </div>
-    </div>
-</section>
+          </section>
