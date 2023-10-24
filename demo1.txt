@@ -1,37 +1,24 @@
-<section id="V">
-    <h1 class="">Visualization</h1>
-    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-        <div class="border-2 border-gray-200 border-solid rounded-lg">
-            <div class="tool rounded-lg" :style="{'background-color': selectedTools.includes('Grafana') ? '#BEBDB8' : 'initial'}">
-                <label for="Grafana">
-                    <span style="font-weight: bold;">Grafana</span>
-                    <p class="tool-info">Grafana is an open-source platform known for data visualization and monitoring. It empowers organizations to create interactive dashboards for metrics and log data. <a href="https://grafana.com/docs/">Read more</a></p>
-                    <p><a style="color: blue;" href="https://loganalyzer.adiscon.com/doc/">Read more</a></p>
-                    <img src="../../public/static/grafana.png" alt="Grafana Logo">
+ <section class="shadow-inner" id="IE">
+            <h1 class="">Intelligent Enrichment</h1>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+              <div class="tool" :style="{'background-color': selectedTools.includes('OpenCTI') ? '#BEBDB8' : 'initial'}">
+                <label for="OpenCTI">
+                  <input v-model="selectedTools" type="checkbox" name="OpenCTI" id="OpenCTI" value="OpenCTI"> 
+                  <span style="font-weight: bold;">OpenCTI</span>
+                  <p class="tool-info">OpenCTI facilitates the collection, analysis, and sharing of cyber threat intelligence. It fosters collaboration among security professionals and organizations, enhancing threat awareness and preparedness. <a href="https://docs.opencti.io/latest/">Read more</a></p>
+                  <p><a style="color: blue;" href="https://loganalyzer.adiscon.com/doc/">Read more</a></p>
+                  <img src="../../public/static/opencti.png" alt="OpenCTI Logo">
                 </label>
-            </div>
-        </div>
-
-        <div class="border-2 border-gray-200 border-solid rounded-lg">
-            <div class="tool rounded-lg" :style="{'background-color': selectedTools.includes('Kibana') ? '#BEBDB8' : 'initial'}">
-                <label for="Kibana">
-                    <span style="font-weight: bold;">Kibana</span>
-                    <p class="tool-info">Kibana serves as the user interface for Elasticsearch. It simplifies data exploration and visualization through interactive dashboards, making log and metric analysis straightforward. <a href="https://www.elastic.co/guide/en/kibana/current/index.html">Read more</a></p>
-                    <p><a style="color: blue;" href="https://loganalyzer.adiscon.com/doc/">Read more</a></p>
-                    <img src="../../public/static/kibana.png" alt="Kibana Logo">
+              </div>
+        
+              <div class="tool" :style="{'background-color': selectedTools.includes('MISP') ? '#BEBDB8' : 'initial'}">
+                <label for="MISP">
+                  <input v-model="selectedTools" type="checkbox" name="MISP" id="MISP" value="MISP"> 
+                  <span style="font-weight: bold;">MISP (Malware Information Sharing Platform)</span>
+                  <p class="tool-info">MISP, an open-source threat intelligence platform, enhances structured threat information sharing among security professionals, aiding in threat detection and mitigation. <a href="https://www.misp-project.org/documentation/">Read more</a></p>
+                  <p><a style="color: blue;" href="https://loganalyzer.adiscon.com/doc/">Read more</a></p>
+                  <img src="../../public/static/misp.png" alt="MISP Logo">
                 </label>
+              </div>
             </div>
-        </div>
-
-        <div class="border-2 border-gray-200 border-solid rounded-lg">
-            <div class="tool rounded-lg" :style="{'background-color': selectedTools.includes('Cabot') ? '#BEBDB8' : 'initial'}">
-                <label for="Cabot">
-                    <span style="font-weight: bold;">Cabot</span>
-                    <p class="tool-info">Cabot is a self-hosted open-source monitoring and alerting system. It keeps a vigilant eye on service and system health, ensuring timely notifications for potential issues. <a href="https://cabotapp.com/qs/quickstart.html">Read more</a></p>
-                    <p><a style="color: blue;" href="https://loganalyzer.adiscon.com/doc/">Read more</a></p>
-                    <img src="../../public/static/cabot.png" alt="Cabot Logo">
-                </label>
-            </div>
-        </div>
-    </div>
-</section>
+          </section>
