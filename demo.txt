@@ -1,29 +1,29 @@
- <section class="shadow-inner" id="LA">
-            <h1 class="">Log Analysis</h1>
-            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-              <div class="border-2 border-gray-200 border-solid rounded-lg">
-                <div class="tool" :style="{'background-color': selectedTools.includes('graylog') ? '#BEBDB8' : 'initial'}" @click="toggleTool('graylog')">
-                  <span style="font-weight: bold;">Graylog</span>
-                  <p class="tool-info">Graylog, with its user-friendly interface, offers comprehensive log management and analysis. It optimizes log storage, search, and alerting, making it a valuable tool for both security and operations.</p>
-                  <p><a style="color: blue;" href="https://go2docs.graylog.org/5-1/home.htm">Read more</a></p>
-                  <img class="tool_img" src="static/graylog.png" alt="">
-                </div>
-              </div>
-              <div class="border-2 border-gray-200 border-solid rounded-lg">
-                <div class="tool" :style="{'background-color': selectedTools.includes('splunk') ? '#BEBDB8' : 'initial'}" @click="toggleTool('splunk')">
-                  <span style="font-weight: bold;">Splunk HEC</span>
-                  <p class="tool-info">Splunk HEC facilitates HTTP-based log and event data ingestion. It enhances real-time data analysis, offering critical insights for organizations using Splunk for log management and monitoring. </p>
-                  <p><a style="color: blue;" href="https://docs.splunk.com/Documentation/Splunk/9.1.1/Data/UsetheHTTPEventCollector">Read more</a></p>
-                  <img class="tool_img" src="static/splunk.png" alt="">
-                </div>
-              </div>
-              <div class="border-2 border-gray-200 border-solid rounded-lg">
-                <div class="tool" :style="{'background-color': selectedTools.includes('logAnalyzer') ? '#BEBDB8' : 'initial'}" @click="toggleTool('logAnalyzer')">
-                  <span style="font-weight: bold;">LogAnalyzer (formerly known as phpLogCon)</span>
-                  <p class="tool-info">LogAnalyzer is a web-based log management tool designed for effective log analysis. It simplifies system issue monitoring and troubleshooting, ensuring robust log management.</p>
-                  <p><a style="color: blue;" href="https://loganalyzer.adiscon.com/doc/">Read more</a></p>
-                  <img class="tool_img" src="static/loganalyzer.png" alt="">
-                </div>
-              </div>
+<section class="shadow-inner" id="LA">
+    <h1 class="">Log Analysis</h1>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <div class="border-2 border-gray-200 border-solid rounded-lg">
+            <div class="tool" :style="{'background-color': selectedTools.includes('graylog') ? '#BEBDB8' : 'initial'}" @click="toggleTool('graylog')">
+                <span style="font-weight: bold;">Graylog</span>
+                <p class="tool-info">Graylog, with its user-friendly interface, offers comprehensive log management and analysis. It optimizes log storage, search, and alerting, making it a valuable tool for both security and operations.</p>
+                <p><a style="color: blue;" href="https://go2docs.graylog.org/5-1/home.htm">Read more</a></p>
+                <img class="tool_img" src="static/graylog.png" alt="">
             </div>
-          </section>
+        </div>
+        <div class="border-2 border-gray-200 border-solid rounded-lg">
+            <div class="tool" :style="{'background-color': selectedTools.includes('splunk') ? '#BEBDB8' : 'initial'}" @click="toggleTool('splunk')">
+                <span style="font-weight: bold;">Splunk HEC</span>
+                <p class="tool-info">Splunk HEC facilitates HTTP-based log and event data ingestion. It enhances real-time data analysis, offering critical insights for organizations using Splunk for log management and monitoring.</p>
+                <p><a style="color: blue;" href="https://docs.splunk.com/Documentation/Splunk/9.1.1/Data/UsetheHTTPEventCollector">Read more</a></p>
+                <img class="tool_img" src="static/splunk.png" alt="">
+            </div>
+        </div>
+        <div class="border-2 border-gray-200 border-solid rounded-lg">
+            <div class="tool" :style="{'background-color': selectedTools.includes('logAnalyzer') ? '#BEBDB8' : 'initial'}" @click="toggleTool('logAnalyzer')">
+                <span style="font-weight: bold;">LogAnalyzer (formerly known as phpLogCon)</span>
+                <p class="tool-info">LogAnalyzer is a web-based log management tool designed for effective log analysis. It simplifies system issue monitoring and troubleshooting, ensuring robust log management.</p>
+                <p><a style="color: blue;" href="https://loganalyzer.adiscon.com/doc/">Read more</a></p>
+                <img class="tool_img" src="static/loganalyzer.png" alt="">
+            </div>
+        </div>
+    </div>
+</section>
