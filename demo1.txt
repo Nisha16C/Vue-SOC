@@ -1,77 +1,37 @@
-<section class="shadow-inner" id="BS">
-            <h1 class="">Backend Storage</h1>
-            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-              <div class="border-2 border-gray-200 border-solid rounded-lg">
-                <div class="tool rounded-lg" :style="{'background-color': selectedTools.includes('wazuhIndexer') ? '#BEBDB8' : 'initial'}">
-                  <label for="WazuhIndexer">
-                    <input @change="changeColor" v-model="selectedTools" class="hidden" type="checkbox" name="WazuhIndexer" id="WazuhIndexer" value="wazuhIndexer">
-                    <span style="font-weight: bold;">Wazuh Indexer</span>
-                    <p class="tool-info">A vital part of the Wazuh platform, the Wazuh Indexer handles indexing and querying of security data. It forms the cornerstone for effective threat detection and response strategies. </p>
-                    <p><a style="color: blue;" href="https://documentation.wazuh.com/current/installation-guide/wazuh-indexer/index.html">Read more</a></p>
-                    <img src="static/wazuhindexer.png" alt="Wazuh Logo">
-                  </label>
-                </div>
-              </div>
-          
-              <div class="border-2 border-gray-200 border-solid rounded-lg">
-                <div class="tool rounded-lg" :style="{'background-color': selectedTools.includes('elasticsearch') ? '#BEBDB8' : 'initial'}">
-                  <label for="Elasticsearch">
-                    <input @change="changeColor" v-model="selectedTools" class="hidden" type="checkbox" name="Elasticsearch" id="Elasticsearch" value="elasticsearch">
-                    <span style="font-weight: bold;">Elasticsearch</span>
-                    <p class="tool-info">ElasticSearch, a distributed search and analytics engine, excels in storing and searching large data volumes. It's commonly utilized in ELK (Elasticsearch, Logstash, Kibana) stacks for diverse use cases </p>
-                    <p><a style="color: blue;" href="https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html">Read more</a></p>
-                    <img src="static/elasticsearch.png" alt="Elasticsearch Logo">
-                  </label>
-                </div>
-              </div>
-          
-              <div class="border-2 border-gray-200 border-solid rounded-lg">
-                <div class="tool rounded-lg" :style="{'background-color': selectedTools.includes('apache_cassandra') ? '#BEBDB8' : 'initial'}">
-                  <label for="Apache">
-                    <input @change="changeColor" v-model="selectedTools" class="hidden" type="checkbox" name="Apache" id="Apache" value="apache_cassandra">
-                    <span style="font-weight: bold;">Apache Cassandra</span>
-                    <p class="tool-info">Apache Cassandra is a highly scalable NoSQL database, ideal for managing extensive data volumes. Its focus on high availability and fault tolerance makes it an excellent choice for organizations. <a href="https://cassandra.apache.org/doc/latest/">Read more</a></p>
-                    <p><a style="color: blue;" href="https://loganalyzer.adiscon.com/doc/">Read more</a></p>
-                    <img src="static/apache.png" alt="Apache Cassandra Logo">
-                  </label>
-                </div>
-              </div>
-            </div><hr>
-          </section>
-
-upr wale code ke jaise same changes krke do niche wale code ke liye without checkbox and include all tags jaise upr wale code m hai 
-
 <section id="V">
-            <h1 class="">Visualization</h1>
-            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-              <div class="tool" :style="{'background-color': selectedTools.includes('Grafana') ? '#BEBDB8' : 'initial'}">
+    <h1 class="">Visualization</h1>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <div class="border-2 border-gray-200 border-solid rounded-lg">
+            <div class="tool rounded-lg" :style="{'background-color': selectedTools.includes('Grafana') ? '#BEBDB8' : 'initial'}">
                 <label for="Grafana">
-                  <input v-model="selectedTools" type="checkbox" name="Grafana" id="Grafana" value="Grafana"> 
-                  <span style="font-weight: bold;">Grafana</span>
-                  <p class="tool-info">Grafana is an open-source platform known for data visualization and monitoring. It empowers organizations to create interactive dashboards for metrics and log data. <a href="https://grafana.com/docs/">Read more</a></p>
-                  <p><a style="color: blue;" href="https://loganalyzer.adiscon.com/doc/">Read more</a></p>
-                  <img src="../../public/static/grafana.png" alt="Grafana Logo">
+                    <span style="font-weight: bold;">Grafana</span>
+                    <p class="tool-info">Grafana is an open-source platform known for data visualization and monitoring. It empowers organizations to create interactive dashboards for metrics and log data. <a href="https://grafana.com/docs/">Read more</a></p>
+                    <p><a style="color: blue;" href="https://loganalyzer.adiscon.com/doc/">Read more</a></p>
+                    <img src="../../public/static/grafana.png" alt="Grafana Logo">
                 </label>
-              </div>
-              
-              <div class="tool" :style="{'background-color': selectedTools.includes('Kibana') ? '#BEBDB8' : 'initial'}">
-                <label for="Kibana">
-                  <input v-model="selectedTools" type="checkbox" name="Kibana" id="Kibana" value="Kibana"> 
-                  <span style="font-weight: bold;">Kibana</span>
-                  <p class="tool-info">Kibana serves as the user interface for Elasticsearch. It simplifies data exploration and visualization through interactive dashboards, making log and metric analysis straightforward. <a href="https://www.elastic.co/guide/en/kibana/current/index.html">Read more</a></p>
-                  <p><a style="color: blue;" href="https://loganalyzer.adiscon.com/doc/">Read more</a></p>
-                  <img src="../../public/static/kibana.png" alt="Kibana Logo">
-                </label>
-              </div>
-              
-              <div class="tool" :style="{'background-color': selectedTools.includes('Cabot') ? '#BEBDB8' : 'initial'}">
-                <label for="Cabot">
-                  <input v-model="selectedTools" type="checkbox" name="Cabot" id="Cabot" value="Cabot"> 
-                  <span style="font-weight: bold;">Cabot</span>
-                  <p class="tool-info">Cabot is a self-hosted open-source monitoring and alerting system. It keeps a vigilant eye on service and system health, ensuring timely notifications for potential issues. <a href="https://cabotapp.com/qs/quickstart.html">Read more</a></p>
-                  <p><a style="color: blue;" href="https://loganalyzer.adiscon.com/doc/">Read more</a></p>
-                  <img src="../../public/static/cabot.png" alt="Cabot Logo">
-                </label>
-              </div>
             </div>
-          </section>
+        </div>
+
+        <div class="border-2 border-gray-200 border-solid rounded-lg">
+            <div class="tool rounded-lg" :style="{'background-color': selectedTools.includes('Kibana') ? '#BEBDB8' : 'initial'}">
+                <label for="Kibana">
+                    <span style="font-weight: bold;">Kibana</span>
+                    <p class="tool-info">Kibana serves as the user interface for Elasticsearch. It simplifies data exploration and visualization through interactive dashboards, making log and metric analysis straightforward. <a href="https://www.elastic.co/guide/en/kibana/current/index.html">Read more</a></p>
+                    <p><a style="color: blue;" href="https://loganalyzer.adiscon.com/doc/">Read more</a></p>
+                    <img src="../../public/static/kibana.png" alt="Kibana Logo">
+                </label>
+            </div>
+        </div>
+
+        <div class="border-2 border-gray-200 border-solid rounded-lg">
+            <div class="tool rounded-lg" :style="{'background-color': selectedTools.includes('Cabot') ? '#BEBDB8' : 'initial'}">
+                <label for="Cabot">
+                    <span style="font-weight: bold;">Cabot</span>
+                    <p class="tool-info">Cabot is a self-hosted open-source monitoring and alerting system. It keeps a vigilant eye on service and system health, ensuring timely notifications for potential issues. <a href="https://cabotapp.com/qs/quickstart.html">Read more</a></p>
+                    <p><a style="color: blue;" href="https://loganalyzer.adiscon.com/doc/">Read more</a></p>
+                    <img src="../../public/static/cabot.png" alt="Cabot Logo">
+                </label>
+            </div>
+        </div>
+    </div>
+</section>
