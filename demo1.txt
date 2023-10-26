@@ -1,10 +1,33 @@
-HomeView.vue file me header or footer create krke do header me left side "Bda Hathi" nam or uska logo lgao or right side me email address user ka aur footer m " API, Status, About , CLI  " in sb ka link dene ke liye nam likh kar do 
-
-<script setup lang="ts">
-
-</script>
-
 <template>
- 
-  <h1></h1>
+  <div>
+    <!-- Header -->
+    <header>
+      <div class="header-left">
+        <img src="/path/to/logo.png" alt="Bda Hathi Logo" />
+        <span>Bda Hathi</span>
+      </div>
+      <div class="header-right">
+        <a href="mailto:your@email.com">your@email.com</a>
+      </div>
+    </header>
+
+    <!-- Main content of your page -->
+    <main>
+      <!-- Your page content goes here -->
+      <h1>Welcome to My Website</h1>
+      <!-- Add your page content here -->
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <nav>
+        <ul>
+          <li><a href="/api">API</a></li>
+          <li><a href="/status">Status</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/cli">CLI</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </div>
 </template>
