@@ -1,60 +1,62 @@
-<template>
-  <div>
-    <!-- Header -->
-    <header class="top-header">
-      <div class="header-left">
-        <img src="/path/to/logo.png" alt="Bda Hathi Logo" />
-        <span>Bda Hathi</span>
-      </div>
-      <div class="header-right">
-        <a href="mailto:your@email.com">your@email.com</a>
-      </div>
-    </header>
-
-    <!-- Main content of your page -->
-    <main>
-      <!-- Your page content goes here -->
-      <h1>Welcome to My Website</h1>
-      <!-- Add your page content here -->
-    </main>
-
-    <!-- Footer -->
-    <footer>
-      <nav>
-        <ul>
-          <li><a href="/api">API</a></li>
-          <li><a href="/status">Status</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/cli">CLI</a></li>
-        </ul>
-      </nav>
-    </footer>
-  </div>
-</template>
-
-<style>
-.top-header {
-  background-color: blue;
-  color: white; /* Text color for header */
-  padding: 10px; /* Adjust padding as needed */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.header-left {
-  display: flex;
-  align-items: center;
-}
-
-.header-left img {
-  width: 50px; /* Adjust the width as needed */
-  height: auto;
-  margin-right: 10px; /* Adjust margin as needed */
-}
-
-.header-right a {
-  color: white; /* Text color for email address */
-  text-decoration: none;
-}
-</style>
+<div class="ant-design-pro ant-pro-basicLayout screen-xs ant-pro-basicLayout-fix-siderbar ant-pro-basicLayout-mix">
+    <section class="ant-layout ant-layout-has-sider" style="min-height: 100%;">
+        <div class="ant-layout" style="position: relative;">
+            <header class="ant-layout-header" style="height: 48px; line-height: 48px; background: transparent;"></header>
+            <header class="ant-layout-header ant-pro-fixed-header" style="padding: 0px; height: 48px; line-height: 48px; width: 100%; z-index: 100; right: 0px;">
+                <div class="ant-pro-global-header ant-pro-global-header-layout-mix">
+                    <span class="ant-pro-global-header-logo">
+                        <a><img src="/assets/BA-logo-44928dd8.svg" alt="logo"></a>
+                    </span>
+                    <span class="ant-pro-global-header-collapsed-button">
+                        <span role="img" aria-label="menu-unfold" class="anticon anticon-menu-unfold">
+                            <svg viewBox="64 64 896 896" focusable="false" data-icon="menu-unfold" width="1em" height="1em" fill="currentColor" aria-hidden="true">
+                                <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM142.4 642.1L298.7 519a8.84 8.84 0 000-13.9L142.4 381.9c-5.8-4.6-14.4-.5-14.4 6.9v246.3a8.9 8.9 0 0014.4 7z"></path>
+                            </svg>
+                        </span>
+                    </span>
+                    <div style="flex: 1 1 0%;"></div>
+                    <div class="css-1a90u2">
+                        <span id="layout-rightcontent-support-button" class="css-k2vtou">
+                            <span role="img" aria-label="question-circle" class="anticon anticon-question-circle">
+                                <svg viewBox="64 64 896 896" focusable="false" data-icon="question-circle" width="1em" height="1em" fill="currentColor" aria-hidden="true">
+                                    <path d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z"></path>
+                                    <!-- Rest of your SVG path data -->
+                                </svg>
+                            </span>
+                        </span>
+                        <!-- More elements as needed -->
+                    </div>
+                </div>
+            </header>
+            <main class="ant-layout-content ant-pro-basicLayout-content ant-pro-basicLayout-has-header">
+                <div class="ant-pro-page-container">
+                    <div class="ant-pro-grid-content">
+                        <div class="ant-pro-grid-content-children">
+                            <div class="ant-pro-page-container-children-content">
+                                <div class="ant-page-header-heading-title" data-testid="page-overview-dss-free-header">Welcome, Nisha Chaurasiya</div>
+                                <div data-testid="overview-no-cluster">
+                                    <div class="ant-card ant-card-bordered css-c3jgi6">
+                                        <div class="ant-card-body">
+                                            <!-- Your content here -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <div class="css-c63huh">
+                <span class="css-1tmi8n9">© 2023 Copyright EnterpriseDB Corporation - All Rights Reserved</span>
+                <a href="https://www.enterprisedb.com/privacy-policy" class="css-1tmi8n9" target="_blank" rel="noreferrer">Privacy Policy</a>
+                <a href="https://www.enterprisedb.com/DBaaS_Cloud_Agreement" class="css-1tmi8n9" target="_blank" rel="noreferrer">Terms of Use</a>
+                <a class="css-1tmi8n9" href="/about">About</a>
+                <a href="/api/docs" class="css-1tmi8n9" target="_blank" rel="noreferrer">API</a>
+                <a href="https://cli.biganimal.com" class="css-1tmi8n9" target="_blank" rel="noreferrer">CLI</a>
+                <a href="https://registry.terraform.io/providers/EnterpriseDB/biganimal/latest/docs" class="css-1tmi8n9" target="_blank" rel="noreferrer">Terraform</a>
+                <a href="https://www.enterprisedb.com/docs/biganimal/latest" class="css-1tmi8n9" target="_blank" rel="noreferrer">Docs</a>
+                <a href="https://status.biganimal.com" class="css-1tmi8n9" target="_blank" rel="noreferrer">Status</a>
+            </div>
+        </div>
+    </section>
+</div>
