@@ -1,95 +1,18 @@
 <template>
-  <div>
-    <header class="ant-layout-header">
-      <!-- Header content goes here -->
-    </header>
-    <header class="ant-layout-header ant-pro-fixed-header">
-      <!-- Fixed header content goes here -->
-    </header>
-    <main class="ant-layout-content ant-pro-basicLayout-content ant-pro-basicLayout-has-header">
-      <div class="ant-pro-page-container">
-        <div class="ant-pro-grid-content">
-          <div class="ant-pro-grid-content-children">
-            <div class="ant-pro-page-container-children-content">
-              <div class="ant-page-header-heading-title" data-testid="page-overview-dss-free-header">
-                Welcome, {{ username }}
-              </div>
-              <div data-testid="overview-no-cluster">
-                <div class="ant-card ant-card-bordered css-c3jgi6">
-                  <div class="ant-card-body">
-                    <div class="css-j6dz9g">
-                      <!-- Card content goes here -->
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
-    <div class="css-c63huh">
-      <span class="css-1tmi8n9">© 2023 Copyright EnterpriseDB Corporation - All Rights Reserved</span>
-      <a href="https://www.enterprisedb.com/privacy-policy" class="css-1tmi8n9" target="_blank" rel="noreferrer">Privacy Policy</a>
-      <a href="https://www.enterprisedb.com/DBaaS_Cloud_Agreement" class="css-1tmi8n9" target="_blank" rel="noreferrer">Terms of Use</a>
-      <a class="css-1tmi8n9" href="/about">About</a>
-      <a href="/api/docs" class="css-1tmi8n9" target="_blank" rel="noreferrer">API</a>
-      <a href="https://cli.biganimal.com" class="css-1tmi8n9" target="_blank" rel="noreferrer">CLI</a>
-      <a href="https://registry.terraform.io/providers/EnterpriseDB/biganimal/latest/docs" class="css-1tmi8n9" target="_blank" rel="noreferrer">Terraform</a>
-      <a href="https://www.enterprisedb.com/docs/biganimal/latest" class="css-1tmi8n9" target="_blank" rel="noreferrer">Docs</a>
-      <a href="https://status.biganimal.com" class="css-1tmi8n9" target="_blank" rel="noreferrer">Status</a>
-    </div>
+  <div class="nav">
+    <a href="#">Home</a>
+    <a href="#"> Email</a>
+    <a href="#">About</a>
   </div>
 </template>
-
 <script>
-export default {
-  data() {
-    return {
-      username: 'Nisha Chaurasiya', // Replace with the actual username
-    };
-  },
-};
+export default{
+  name: 'Header'
+}
 </script>
-
 <style>
-    .ant-layout-header {
-  /* Add your styles for the main header here */
-  height: 48px;
-  line-height: 48px;
-  background: transparent;
+.nav{
+  background-color: #333;
+  overflow:hidden
 }
-
-.ant-pro-fixed-header {
-  /* Add your styles for the fixed header here */
-  padding: 0px;
-  height: 48px;
-  line-height: 48px;
-  width: 100%;
-  z-index: 100;
-  right: 0px;
-}
-
-/* Add more custom styles for other elements in your component here */
-
-/* For example, to style the "Welcome" text: */
-.ant-page-header-heading-title {
-  font-size: 24px;
-  font-weight: bold;
-  color: #333; /* Change the color to your preference */
-}
-
-/* Add styles for the footer section */
-.css-c63huh {
-  background: #f5f5f5;
-  padding: 10px;
-  text-align: center;
-}
-
-.css-1tmi8n9 {
-  color: #666; /* Change the color to your preference */
-  margin: 0 10px;
-}
-
-/* Add your CSS styles here */
 </style>
