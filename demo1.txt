@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- Header -->
-    <header>
+    <header class="top-header">
       <div class="header-left">
         <img src="/path/to/logo.png" alt="Bda Hathi Logo" />
         <span>Bda Hathi</span>
@@ -31,3 +31,30 @@
     </footer>
   </div>
 </template>
+
+<style>
+.top-header {
+  background-color: blue;
+  color: white; /* Text color for header */
+  padding: 10px; /* Adjust padding as needed */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-left img {
+  width: 50px; /* Adjust the width as needed */
+  height: auto;
+  margin-right: 10px; /* Adjust margin as needed */
+}
+
+.header-right a {
+  color: white; /* Text color for email address */
+  text-decoration: none;
+}
+</style>
