@@ -1,20 +1,12 @@
-<div class="ant-dropdown css-dolfu5 ant-dropdown-placement-bottomRight " style="min-width: 248.312px; left: 289px; top: 68px;"><div class="css-n63qqi">
-  <div class="css-177ydks">Nisha Chaurasiya's organization</div><a class="css-13f353r" href="/settings/profile">Settings</a><a class="css-13f353r" href="/billing">Billing</a><a class="css-13f353r" href="/projects">Projects</a><a class="css-13f353r" href="/users">User Management</a><a class="css-13f353r" href="/activity-log">Activity Log</a><div class="css-2ng8fy"></div><a class="css-lhxmz2" href="https://www.enterprisedb.com/accounts/profile" target="_blank" rel="noreferrer">My Account<span role="img" class="anticon css-e9wx08"><svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M11 7.66667V11.6667C11 12.0203 10.8595 12.3594 10.6095 12.6095C10.3594 12.8595 10.0203 13 9.66667 13H2.33333C1.97971 13 1.64057 12.8595 1.39052 12.6095C1.14048 12.3594 1 12.0203 1 11.6667V4.33333C1 3.97971 1.14048 3.64057 1.39052 3.39052C1.64057 3.14048 1.97971 3 2.33333 3H6.33333" stroke="#11152A"></path><path d="M9 1H13V5" stroke="#11152A" fill="currentColor"></path><path d="M5.66669 8.33333L13 1" stroke="#11152A" fill="currentColor"></path></svg></span></a><a class="css-13f353r" href="/user/logout">Logout</a></div></div>
-
-
-.ant-dropdown{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    color: #585b65;
-    font-size: 14px;
-    font-variant: tabular-nums;
-    line-height: 1.5715;
-    list-style: none;
-    font-feature-settings: "tnum";
-    position: absolute;
-    top: -9999px;
-    left: -9999px;
-    z-index: 1050;
-    display: block;
-    }
+<span class="ant-page-header-heading-title" title="Clusters">Clusters</span>
+.ant-page-header-heading-title{
+    margin-right: 12px;
+    margin-bottom: 0;
+    color: #27292f;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
