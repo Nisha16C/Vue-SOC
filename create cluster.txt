@@ -1,0 +1,88 @@
+<script setup lang="ts">
+
+
+
+</script>
+
+<template>
+  <!-- <header class="fixed top-0 z-50 bg-red-400 w-full">
+    <nav class="mx-auto flex w-11/12 items-center justify-between p-6 lg:px-8 " aria-label="Global">
+      <div class="flex lg:flex-1">
+        <a href="#" class="-m-1.5 p-1.5">
+          <h1 class="text-lg font-semibold">Big Animal</h1>
+        </a>
+      </div>
+
+      <div class="hidden lg:flex lg:gap-x-12">
+        <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Products</a>
+        <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Features</a>
+        <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Marketplace</a>
+        <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Company</a>
+      </div>
+      <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+        <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Log in <span
+            aria-hidden="true">&rarr;</span></a>
+      </div>
+    </nav>
+
+                                                                                                                                                                                                                                                                    </header> -->
+  <div>
+    <div>
+      <header class="fixed z-50 top-0 left-0 bg-white text-black py-4 text-center w-full border border-black-700">
+        <span class="font-bold text-4xl">Create Cluster</span>
+      </header>                                                 
+    </div>
+    <div class="fixed top-16 left-0 bg-white text-black py-4 pl-10 w-full border border-black-700">
+      <ul class="flex justify-center space-x-4 mx-10"> <!-- Adjust mx-10 for the desired left space -->
+        <li><a href="#" class="text-black text-xl hover:text-red-400">Cluster Info</a></li>
+        <li><a href="#" class="text-black text-xl hover:text-red-400">Cluster Settings</a></li>
+        <li><a href="#" class="text-black text-xl hover:text-red-400">DB Configuration</a></li>
+        <li><a href="#" class="text-black text-xl hover:text-red-400">Additional Settings</a></li>
+        <!-- Add more links as needed -->
+      </ul>
+    </div>
+    <div class="fixed top-32 left-0 w-full text-red-400 py-4 pl-10">
+      <span class="font-bold text-xl">All Fields Required</span>
+    </div>
+    <div class="fixed top-48 left-0 w-full text-black text-4xl pl-10">
+      <span class="font-bold">Select the type of cluster you plan to use:</span>
+    </div>
+    <div class="fixed top-64 left-0 w-full text-black text-3xl pl-10">
+      <span font-bold> Cluster Type </span>
+    </div>
+    <div>
+      <div class="fixed top-80 left-0 text-center w-1/5 border border-black-700 hover:border-red-400 p-4">
+        <span class="text-xl font-bold mb-4">Single Node</span>
+        <p>In the context of Linux and computing in general, "cloud" typically refers to cloud computing or cloud services. 
+          Cloud computing involves delivering various computing services, such as storage, processing, databases, networking, and more, over the internet.
+          Instead of owning and managing physical hardware and software on-premises, cloud computing allows you to access and use these resources through remote data centers owned and maintained by cloud service providers.</p>
+      </div>
+
+      <div class="fixed top-80 left-1/3 w-1/5 text-center border border-black-700 hover:border-red-400 p-4">
+        <span class="text-xl font-bold mb-4">Primary/Standby High Availability</span>
+        <p>In the context of Linux and computing in general, "cloud" typically refers to cloud computing or cloud services. 
+          Cloud computing involves delivering various computing services, such as storage, processing, databases, networking, and more, over the internet.
+          Instead of owning and managing physical hardware and software on-premises, cloud computing allows you to access and use these resources through remote data centers owned and maintained by cloud service providers.</p>
+      </div>
+
+      <div class="fixed top-80 left-2/3 w-1/5 text-center border border-black-700 hover:border-red-400 p-4">
+        <span class="text-xl font-bold mb-4">Distributed High Availability</span>
+        <p>In the context of Linux and computing in general, "cloud" typically refers to cloud computing or cloud services. 
+          Cloud computing involves delivering various computing services, such as storage, processing, databases, networking, and more, over the internet.
+          Instead of owning and managing physical hardware and software on-premises, cloud computing allows you to access and use these resources through remote data centers owned and maintained by cloud service providers.</p>
+      </div>
+    </div>
+
+
+  </div>
+  
+    
+
+</template>
+
+<script>
+  
+</script>
+<style scopped>
+  
+</style>
